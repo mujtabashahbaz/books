@@ -33,6 +33,6 @@ st.header("Delete a Book")
 book_id_to_delete = st.number_input("Enter Book ID to delete", min_value=1, step=1)
 
 if st.button("Delete Book"):
-    global books
-    books = [book for book in books if book["id"] != book_id_to_delete]
+    # Use global only inside a function
+    books[:] = [book for book in books if book["id"] != book_id_to_delete]
     st.write(f"Book with ID {book_id_to_delete} deleted!")

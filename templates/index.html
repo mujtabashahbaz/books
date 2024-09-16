@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book API</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Collection</h1>
+        
+        <!-- Book Form -->
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Book Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <!-- Book List -->
+        <h2>Available Books</h2>
+        <ul id="book-list"></ul>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
